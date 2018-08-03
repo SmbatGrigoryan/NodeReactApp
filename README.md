@@ -13,4 +13,3 @@
 
 https://nameless-ravine-28146.herokuapp.com/ 
  
-https://git.heroku.com/nameless-ravine-28146.gi

@@ -7,7 +7,12 @@
     "npm": "5.6.0"
   },
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "server": "nodemon ./bin/www",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\" \"npm run webhook\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
+    "webhook": "./sendgrid_webhook.sh"
   },
   "dependencies": {
     "body-parser": "^1.18.3",

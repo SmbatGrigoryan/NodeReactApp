@@ -8,12 +8,6 @@ const authRouter = require('./routes/authRouter');
 const billingRoutes = require('./routes/billingRoutes');
 
 
-
-// const testLearn = require('./testLearn');        // DELETE
-// testLearn();                                     // DELETE
-
-//require('./testLearn')();                        // DELETE
-
 require('es6-promise').polyfill();
 require('isomorphic-fetch');
 
@@ -41,6 +35,9 @@ app.use(passport.session());
 app.use('/', authRouter);
 app.use('/',billingRoutes);
 
+
+
+// DELETE THIS ROUTE
 app.get('/', (req, res) => {
   res.send({hi: 'This is react node App'});
 })
@@ -48,7 +45,7 @@ app.get('/', (req, res) => {
 
 if (process.env.NODE_ENV === 'production') {
   // Express will serve up production assets
-  // like our main.js file, or main.css file!
+  // main.js file, or main.css file!
   app.use(express.static('client/build'));
 
   // Express will serve up the index.html file
