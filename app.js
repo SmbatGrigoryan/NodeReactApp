@@ -41,6 +41,10 @@ app.use(passport.session());
 app.use('/', authRouter);
 app.use('/',billingRoutes);
 
+app.get('/', (req, res) => {
+  res.send({hi: 'This is react node App'});
+})
+
 
 if (process.env.NODE_ENV === 'production') {
   // Express will serve up production assets
