@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const {stripSecretKey} = require('../config/keys');
+const {stripeSecretKey} = require('../config/keys');
 
-const stripe = require('stripe')(stripSecretKey);
+const stripe = require('stripe')(stripeSecretKey);
 const requireLogin = require('../middlewares/requireLogin');
 
 router.post('/api/strip', requireLogin, async (req, res) => {
