@@ -37,12 +37,6 @@ app.use('/',billingRoutes);
 
 
 
-// DELETE THIS ROUTE
-app.get('/', (req, res) => {
-  res.send({hi: 'This is react node App'});
-})
-
-
 if (process.env.NODE_ENV === 'production') {
   // Express will serve up production assets
   // main.js file, or main.css file!
