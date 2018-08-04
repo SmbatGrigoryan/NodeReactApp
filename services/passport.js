@@ -3,7 +3,7 @@ const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const mongoose = require('mongoose');
 const keys = require('../config/keys');
 
-const User = require('../models/User');
+const User = mongoose.model('users');
 
 passport.serializeUser((user, done) => {
     done(null, user.id);
@@ -37,8 +37,11 @@ passport.use(
             createdAt: new Date().toLocaleString()
         })
             .save()
-            .then((doc) => console.log(doc)); // DELETE
-        done(null, user);
+            .then((user) => done(null, user)); // DELETE
+
+
+    // .then((doc) => console.log(doc)); // DELETE
+    //   await done(null, user);
     })
 );
 

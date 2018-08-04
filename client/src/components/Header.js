@@ -15,18 +15,21 @@ class Header extends Component {
 
       default:
         return [
-          <li
-              key="5"
-              style={{fontSize: '15px'}}
-          >
-            Available Credits {this.props.auth.credits}
-            </li>,
+
           <li
               key="1"
               style={{margin: '0 12px', fontSize: '15px'}}
           >
             <StripePayments/>
           </li>,
+
+          <li
+              key="5"
+              style={{fontSize: '15px'}}
+          >
+            Available Credits {this.props.auth.credits}
+            </li>,
+
           <li
               key="2"
               style={{fontSize: '15px'}}
@@ -46,10 +49,15 @@ class Header extends Component {
         <nav className=" grey darken-2">
           <div className="nav-wrapper">
 
-            <a href="#" className="left brand-logo">Logo</a>
+            {/*<a*/}
+                {/*href="/"*/}
+                {/*className="left brand-logo"*/}
+                {/*style={{margin: '0 12px', fontSize: '15px'}}*/}
+            {/*>Logo</a>*/}
             <Link
                 to={this.props.auth ? '/surveys' : '/'}
                 className="left brand-logo"
+                style={{margin: '0 12px', fontSize: '18px'}}
             >Logo</Link>
             <ul id="nav-mobile" className="right">
               {this.renderContent()}
