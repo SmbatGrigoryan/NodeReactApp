@@ -4,5 +4,8 @@ module.exports = {
   mongoURI: 'mongodb://smbat:SGsg_123@ds235461.mlab.com:35461/node-react-app',
   cookieKey: 'somemestireassecret',
   stripePublishableKey: 'pk_test_hGLhstBb8ZCbvUbLTSEpFdvD',
-  stripeSecretKey: 'sk_test_Y7kuTRe9eO1Ndmr4AQVdFnFf'
+  stripeSecretKey: 'sk_test_Y7kuTRe9eO1Ndmr4AQVdFnFf',
+  sendGridKey: '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',
+  redirectDomain: "http://localhost:3000"
 };
+

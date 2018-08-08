@@ -7,6 +7,9 @@ import { createStore, applyMiddleware } from 'redux';
 import reducers from './reducers';
 import ReduxThunk from 'redux-thunk';
 
+import axios from 'axios'; //DELETE
+window.axios = axios;      //DELETE
+
 const store = createStore(reducers, {}, applyMiddleware(ReduxThunk));
 
 

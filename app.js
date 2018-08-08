@@ -16,6 +16,7 @@ const app = express();
 
 const authRoutes = require('./routes/authRoutes');
 const billingRoutes = require('./routes/billingRoutes');
+const surveyRoutes = require('./routes/surveyRoutes');
 
 require('es6-promise').polyfill();
 require('isomorphic-fetch');
@@ -34,6 +35,8 @@ app.use(passport.session());
 
 app.use('/', authRoutes);
 app.use('/', billingRoutes);
+app.use('/', surveyRoutes);
+
 
 
 if (process.env.NODE_ENV === 'production') {
@@ -54,10 +57,11 @@ if (process.env.NODE_ENV === 'production') {
 //DELETE --------------------------------------------------------------
 //console.log('true || false ------>' ,true || false);
 //console.log('false || true------->' ,false || true);
+console.log('Date.now()------->' ,new Date().toLocaleString());
 
 
 
-//DELETE --------------------------------------------------------------
+//DELETE -------------------------------------------------------------
 
 
 module.exports = app;
