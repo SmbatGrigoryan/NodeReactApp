@@ -1,22 +1,6 @@
-https://nameless-ravine-28146.herokuapp.com/ 
 
-
-
-/api/strip
-
-/auth/google
-
-/auth/google/callback
-
-/api/logout
-
-/api/current_user
-/surveys
-/surveys/new
-
-
-https://nameless-ravine-28146.herokuapp.com/ 
-
+see this app on heroku
+https://nameless-ravine-28146.herokuapp.com/
 
 
 
@@ -30,3 +14,11 @@ README DEV
 
 
  
+
+/api/strip
+/auth/google
+/auth/google/callback
+/api/logout
+/api/current_user
+/surveys
+/surveys/new
