@@ -9,13 +9,6 @@ import Dashboard from './Dashboard';
 import SurveyNew from './surveys/SurveyNew';
 
 
-// const surveys = () => {
-//   return (
-//       <h2> {'surveys'.toUpperCase()}</h2>
-//   )
-// };
-
-
 class App extends Component {
 
   componentDidMount() {

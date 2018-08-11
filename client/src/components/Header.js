@@ -15,7 +15,6 @@ class Header extends Component {
 
       default:
         return [
-
           <li
               key="8"
               style={{fontSize: '15px'}}
@@ -49,11 +48,6 @@ class Header extends Component {
     return (
         <nav className=" grey darken-2">
           <div className="nav-wrapper">
-            {/*<Link*/}
-                {/*to={this.props.auth ? '/surveys' : '/'}*/}
-                {/*className="left brand-logo"*/}
-                {/*style={{margin: '0 12px', fontSize: '18px'}}*/}
-            {/*>Logo</Link>*/}
             <ul id="nav-mobile" className="right">
               {this.renderContent()}
             </ul>

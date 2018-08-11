@@ -1,13 +1,11 @@
 import _ from 'lodash';
 import React from 'react';
 import { connect } from 'react-redux';
-//import formFields from './formFields';
 import { withRouter } from 'react-router-dom';
 import * as actions from '../.././actions';
 
 
 const SurveyFormReview = ( {onCancel, formValues, submitSurvey, history} ) => {
-          //console.log(formValues.surveyTitle);
 
   return (
       <div>
@@ -48,7 +46,6 @@ const SurveyFormReview = ( {onCancel, formValues, submitSurvey, history} ) => {
 };
 
 function mapStateToProps(state) {
-          //console.log('state.form.surveyForm.values' ,state.form.surveyForm.values);
   return { formValues: state.form.surveyForm.values };
 }
 

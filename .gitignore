@@ -3,3 +3,4 @@ views
 config/dev.js
 .idea status
 .idea
+public

@@ -37,11 +37,7 @@ passport.use(
             createdAt: new Date().toLocaleString()
         })
             .save()
-            .then((user) => done(null, user)); // DELETE
-
-
-    // .then((doc) => console.log(doc)); // DELETE
-    //   await done(null, user);
+            .then((user) => done(null, user));
     })
 );
 

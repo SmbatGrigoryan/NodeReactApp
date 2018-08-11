@@ -21,7 +21,6 @@ class SurveyNew extends Component {
   render() {
     return (
         <div>
-          {/*this is from SurveyNew*/}
           {this.renderContent()}
         </div>
     )

@@ -7,11 +7,7 @@ import { createStore, applyMiddleware } from 'redux';
 import reducers from './reducers';
 import ReduxThunk from 'redux-thunk';
 
-import axios from 'axios'; //DELETE
-window.axios = axios;      //DELETE
-
 const store = createStore(reducers, {}, applyMiddleware(ReduxThunk));
-
 
 ReactDOM.render(
     <Provider store = {store}>
@@ -20,8 +16,8 @@ ReactDOM.render(
     document.querySelector('#root')
 );
 
-// console.log('REACT_APP_STRIPE_KEY', process.env.REACT_APP_STRIPE_KEY);
-// console.log('REACT_APP_STRIPE_KEY', process.env.NODE_ENV);
 
 
+//import axios from 'axios'; //DELETE
+//window.axios = axios;      //DELETE
 

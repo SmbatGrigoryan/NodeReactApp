@@ -5,9 +5,6 @@ import * as actions from '../actions';
 
 class StripePayments extends Component {
   render() {
-
-    //debugger;
-
     return (
         <StripeCheckout
             name="Payment for services"
@@ -16,8 +13,7 @@ class StripePayments extends Component {
             token={(token) => {
               console.log(token);
                return this.props.handleToken(token);
-            }} //must be callback function
-
+            }}
             stripeKey={process.env.REACT_APP_STRIPE_KEY}
         >
 
@@ -28,7 +24,5 @@ class StripePayments extends Component {
     );
   }
 }
-
-
 
 export default connect(null, actions)(StripePayments);

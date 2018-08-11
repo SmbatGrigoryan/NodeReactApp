@@ -21,19 +21,8 @@ router.get('/api/logout', (req, res) => {
 });
 
 router.get('/api/current_user', (req, res) => {
-    console.log('req.session------------------------->', req.session);
-    console.log('req.user------------------------->', req.user);
-
-    //res.send(req.session);
     res.send(req.user);
 });
-
-// test fetch() ---------------------------------------------------------
-
-
-
-
-
 
 
 module.exports = router;
