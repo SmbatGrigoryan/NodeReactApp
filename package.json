@@ -12,7 +12,8 @@
     "client": "npm run start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\" \"npm run webhook\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
-    "webhook": "./sendgrid_webhook.sh"
+    "webhook_to_Repace_Later": "./sendgrid_webhook.sh",
+    "webhook": "forever sendgrid_webhook.js"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
@@ -24,11 +25,17 @@
     "http-errors": "~1.6.2",
     "isomorphic-fetch": "^2.2.1",
     "jade": "~1.11.0",
+    "localtunnel": "^1.9.0",
+    "lodash": "^4.17.10",
     "mongoose": "^5.2.3",
     "morgan": "~1.9.0",
     "passport": "^0.4.0",
     "passport-google-oauth20": "^1.0.0",
+    "path-parser": "^4.2.0",
     "sendgrid": "^5.1.2",
     "stripe": "^6.5.0"
+  },
+  "devDependencies": {
+    "forever": "^0.15.3"
   }
 }

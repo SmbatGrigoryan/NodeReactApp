@@ -1,3 +1,7 @@
+https://nameless-ravine-28146.herokuapp.com/ 
+
+
+
 /api/strip
 
 /auth/google
@@ -12,4 +16,17 @@
 
 
 https://nameless-ravine-28146.herokuapp.com/ 
+
+
+
+
+README DEV
+-------------------------------------------
+1. npm run webhook 
+2. copy url: from Tunnel { }
+3. add url to https://app.sendgrid.com/settings/mail_settings
+
+
+
+
  

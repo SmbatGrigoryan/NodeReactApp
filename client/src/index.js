@@ -20,8 +20,8 @@ ReactDOM.render(
     document.querySelector('#root')
 );
 
-console.log('REACT_APP_STRIPE_KEY', process.env.REACT_APP_STRIPE_KEY);
-console.log('REACT_APP_STRIPE_KEY', process.env.NODE_ENV);
+// console.log('REACT_APP_STRIPE_KEY', process.env.REACT_APP_STRIPE_KEY);
+// console.log('REACT_APP_STRIPE_KEY', process.env.NODE_ENV);
 
 
 

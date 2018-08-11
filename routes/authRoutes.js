@@ -5,8 +5,6 @@ const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
 
 
-
-
 router.get('/auth/google',
     passport.authenticate('google', {scope: ['profile', 'email']})
 );
