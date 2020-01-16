@@ -1,9 +1,4 @@
 
-see this app on heroku
-https://nameless-ravine-28146.herokuapp.com/
-
-
-
 README DEV
 -------------------------------------------
 1. npm run webhook 
